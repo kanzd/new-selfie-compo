@@ -1,3 +1,24 @@
 body{
     background-color: grey;
 }
+.second-root{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.noti-text{
+    color: white;
+    margin-top:270px;
+    font-weight: 700;
+    font-size: 24px;
+}
+.image-container{
+    margin-top:10%;
+    background-image: url("https://assets.zestmoney.in/assets/customers/bolt/selfie_frame.svg");
+    overflow: hidden;
+    padding: 5px 5px 5px 5px;
+    width: 216px;
+    height: 212px;
+
+}

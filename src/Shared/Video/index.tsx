@@ -1,6 +1,6 @@
 import React, { useEffect,useState } from 'react'
 import "./index.css";
-export default function Index(Props: any) {
+export default function Index(props: any) {
     const [img,setImg]=useState('');
     const successHandler = (stream: any) => {
 
@@ -68,16 +68,14 @@ export default function Index(Props: any) {
             const dataUri = canvas.toDataURL(`image/png`);
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             console.log(dataUri);
-            setImg(dataUri);
+            props.onClick(dataUri);
         }}>
             <div className='inner-button'>
 
             </div>
         </div>
-        <div>
-            <img
-            src={img}></img>
-        </div>
+        
+          
         </>
     )
 }
