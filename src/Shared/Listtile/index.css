@@ -1,0 +1,27 @@
+.list-tile{
+    display: flex;
+    flex-direction: row;
+  justify-content: space-evenly;
+  width: 600px;
+}
+.titles{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.heading{
+    font-size: 24px;
+    
+    font-weight: bold;
+    font-family:'TropilineBold';
+}
+.subheading{
+    font-size: 13px;
+    color: grey;
+    font-weight: 500;
+   
+}
+.tail{
+
+}
