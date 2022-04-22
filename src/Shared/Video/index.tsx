@@ -25,7 +25,7 @@ export default function Index(Props: any) {
         navigator?.mediaDevices?.getUserMedia({
             audio: false, video: {
                 facingMode: { ideal: "user" },
-                width: 260, height: 275
+                width: 360, height: 405
             }
         })
             .then(stream => successHandler(stream))
@@ -36,7 +36,7 @@ export default function Index(Props: any) {
         <div className='video-camera'>
             
             <div className='inside'>
-                <video id='user-video' src="" ></video>
+                <video id='user-video' height={405}  src="" ></video>
             </div>
             <div className='frame'>
                 <div className='top'>
@@ -70,7 +70,9 @@ export default function Index(Props: any) {
             console.log(dataUri);
             setImg(dataUri);
         }}>
+            <div className='inner-button'>
 
+            </div>
         </div>
         <div>
             <img

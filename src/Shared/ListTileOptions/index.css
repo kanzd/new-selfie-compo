@@ -1,0 +1,9 @@
+.list-tile-option{
+    display: flex;
+    flex-direction: column;
+    width: 410px;
+
+}
+.first-tile{
+    text-align: left;
+}

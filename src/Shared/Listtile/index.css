@@ -3,6 +3,7 @@
     flex-direction: row;
   justify-content: space-evenly;
   width: 600px;
+  margin-top: 5%;
 }
 .titles{
     display: flex;
