@@ -1,6 +1,7 @@
-import React, { useEffect } from 'react'
+import React, { useEffect,useState } from 'react'
 import "./index.css";
 export default function Index(Props: any) {
+    const [img,setImg]=useState('');
     const successHandler = (stream: any) => {
 
         // window.streamTracks = stream;
@@ -67,8 +68,13 @@ export default function Index(Props: any) {
             const dataUri = canvas.toDataURL(`image/png`);
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             console.log(dataUri);
+            setImg(dataUri);
         }}>
 
+        </div>
+        <div>
+            <img
+            src={img}></img>
         </div>
         </>
     )
