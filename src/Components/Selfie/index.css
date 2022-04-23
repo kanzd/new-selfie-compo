@@ -9,16 +9,50 @@ body{
 }
 .noti-text{
     color: white;
-    margin-top:270px;
+    margin-top:100px;
     font-weight: 700;
     font-size: 24px;
 }
 .image-container{
-    margin-top:10%;
-    background-image: url("https://assets.zestmoney.in/assets/customers/bolt/selfie_frame.svg");
+    margin-top: 10%;
+    background-image: url(https://assets.zestmoney.in/assets/customers/bolt/selfie_frame.svg);
     overflow: hidden;
-    padding: 5px 5px 5px 5px;
+    padding: 8px 10px 10px 12px;
     width: 216px;
     height: 212px;
+    background-repeat: no-repeat;
 
+}
+.confirm-selfie{
+    background-color: #1FBA68;
+    color: white;
+    width: 464px;
+    height: 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    margin-top:100px;
+}
+.retake-selfie{
+    background-color: #FFFFFF;
+    color: #1FBA68;
+    width: 464px;
+    height: 56px;
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    margin-top: 16px;
+    margin-bottom: 58px;
+
+}
+.confirm-selfie:hover{
+    cursor: pointer;
+}
+.retake-selfie:hover{
+    cursor: pointer;
 }

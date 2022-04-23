@@ -67,8 +67,8 @@ export default function Index(props: any) {
             ctx.drawImage(video, 0, 0);
             const dataUri = canvas.toDataURL(`image/png`);
             ctx.clearRect(0, 0, canvas.width, canvas.height);
-            console.log(dataUri);
-            props.onClick(dataUri);
+            
+            props.onClick(dataUri,video);
         }}>
             <div className='inner-button'>
 

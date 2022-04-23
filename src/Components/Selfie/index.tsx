@@ -18,9 +18,17 @@ export default function Index() {
         </div>
     </Navbar> */}
     <ListTile  heading={"Take a Selfie"} subheading={"Verify your identity by clicking your photo"} tail={"csdc"}></ListTile>
-    <Video onClick={(image:any)=>{
+    <Video onClick={(image:any,video:any)=>{
+        const mediaStream = video.srcObject;
+        const tracks = mediaStream.getTracks();
+      tracks.forEach((track:any)=>{
+          track.stop();
+      })
+        video.srcObject = null;
+        console.log(tracks);
         setImg(image);
         setCurrentScreen(2);
+        
     }}></Video>
     {/* <ListTileOption /> */}
     </Container>:<Container color={"#1A1A1A"}>
@@ -29,7 +37,15 @@ export default function Index() {
             Looking so good!
             </div>
             <div className='image-container'>
-                <img  width={210} height={205} src={img}></img>
+                <img  width={205} height={205} src={img}></img>
+            </div>
+            <div className='confirm-selfie' onClick={(e)=>{}}>
+            Confirm selfie 
+            </div>
+            <div className='retake-selfie' onClick={(e)=>{
+                setCurrentScreen(1);
+            }}>
+            Retake selfie
             </div>
         </div>
     </Container>}
