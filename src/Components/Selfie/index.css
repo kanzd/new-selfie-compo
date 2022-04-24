@@ -34,13 +34,14 @@ body{
     align-items: center;
     border-radius: 100px;
     margin-top:100px;
+    font-weight: 600;
 }
 .retake-selfie{
     background-color: #FFFFFF;
     color: #1FBA68;
     width: 464px;
     height: 56px;
- 
+    font-weight: 600;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -55,4 +56,37 @@ body{
 }
 .retake-selfie:hover{
     cursor: pointer;
+}
+.popup-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popup-heading{
+    font-weight: 600;
+
+}
+.popup-subheading{
+    text-align: center;
+    color:#4A4A4A;
+    width:320px;
+    margin-top:6px;
+}
+.popup-button{
+   
+    background-color: #1FBA68;
+    color: #FFFFFF;
+    padding: 16px;
+    border-radius: 100px;
+    width: 36vw;
+    text-align: center;
+    margin: 28px 0px;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+.popup-icon{
+    margin-top: 30px;
+    margin-bottom: 18px;
 }

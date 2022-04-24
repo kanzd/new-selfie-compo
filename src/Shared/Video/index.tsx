@@ -29,7 +29,10 @@ export default function Index(props: any) {
             }
         })
             .then(stream => successHandler(stream))
-            .catch(error => console.log(error));
+            .catch(error =>{
+                
+                props.noPermission();
+            });
     }, [])
     return (
         <>
