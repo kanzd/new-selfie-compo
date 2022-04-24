@@ -11,6 +11,7 @@ export default function Index() {
     const [img,setImg]=useState('');
     const [current_screen,setCurrentScreen]=useState(1);
     const [popup,setPopup]=useState(false);
+    const [popup2,setPopup2]=useState(false);
   return (
     <>
    {current_screen===1?<Container>
@@ -54,7 +55,7 @@ export default function Index() {
         </div>
     </Container>}
     
-    <Popup open={popup}>
+    <Popup open={popup} >
         <div className='popup-content'>
             <img className='popup-icon' src={"https://assets.zestmoney.in/assets/customers/bolt/camera_circle.png"}></img>
             <div className="popup-heading">
@@ -63,13 +64,48 @@ export default function Index() {
             <div className='popup-subheading'>
             Please grant camera permission to continue with KYC verification
             </div>
-            <div className='popup-button'>
+            <div className='popup-button' onClick={(e)=>{
+                setPopup(false);
+                setPopup2(true);
+            }}>
             Continue with camera access
             </div>
         </div>
         
     </Popup>
-   
+    <Popup open={popup2} close={true} onClose={()=>{
+        setPopup2(false)
+    }}>
+        <div className='popup-content'>
+           
+            <div className="popup-heading-second">
+            Uh oh! camera permission is required 
+to verify your identity
+            </div>
+            <div className='popup-subheading-second'>
+            This will help us secure your account.
+            </div>
+            <div className='popup-list-second'>
+                <div className='popup-list-second-text'>
+                1. On your address bar click the camera icon
+                </div>
+                <div className='popup-list-second-image'>
+                    <img src={"https://s3.ap-south-1.amazonaws.com/assets.zestmoney.in/assets/customers/UnifiedFlow/chrome1.png"}>
+                    
+                    </img>
+                </div>
+                <div className='popup-list-second-text'>
+                2. A pop up will appear, please select Allow zestmoney.in to access your camera
+                </div>
+                <div className='popup-list-second-image'>
+                    <img src={"https://s3.ap-south-1.amazonaws.com/assets.zestmoney.in/assets/customers/UnifiedFlow/chorme2.png"}>
+                    
+                    </img>
+                </div>
+            </div>
+        </div>
+        
+    </Popup>
     </>
   )
 }

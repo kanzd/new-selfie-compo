@@ -86,7 +86,35 @@ body{
     font-weight: 600;
 
 }
+.popup-button:hover{
+    cursor: pointer;
+}
 .popup-icon{
     margin-top: 30px;
     margin-bottom: 18px;
+}
+.popup-heading-second{
+    font-weight: 600;
+width: 290px;
+margin-left: -170px;
+}
+.popup-subheading-second{
+    text-align: center;
+    color: #4A4A4A;
+    width: 320px;
+    margin-top: 6px;
+    margin-left: -230px;
+    font-size: 14px;
+}
+.popup-list-second{
+
+}
+.popup-list-second-text{
+    width: 455px;
+    font-size: 14px;
+    margin-top: 65px;
+    margin-bottom: 10px;
+}
+.popup-list-second-image{
+    margin-bottom:2%;
 }

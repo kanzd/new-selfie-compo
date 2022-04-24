@@ -10,12 +10,21 @@
 }
 .popup{
     position: fixed;
-    top: 30%;
+    top: 10%;
     left: 30%;
     background-color: #FFFFFF;
-   
+    vertical-align: middle;
     width: 41vw;
     opacity: 100%;
     z-index: 2;
     border-radius: 8px;
+}
+.close-popup{
+    display: flex;
+    flex-direction:row;
+    justify-content: end;
+    padding: 10px 12px 0px 5px;
+}
+.close-popup:hover{
+    cursor: pointer;
 }
