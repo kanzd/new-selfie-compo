@@ -1,9 +1,10 @@
 .list-tile{
     display: flex;
     flex-direction: row;
-  justify-content: space-evenly;
-  width: 600px;
-  margin-top: 5%;
+    justify-content: space-evenly;
+    width: 120vw;
+    margin-top: 5%;
+    max-width: 675px;
 }
 .titles{
     display: flex;
