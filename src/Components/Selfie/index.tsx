@@ -77,13 +77,16 @@ export default function Index() {
         setPopup2(false)
     }}>
         <div className='popup-content'>
-           
+           <div className="text-cover">
             <div className="popup-heading-second">
             Uh oh! camera permission is required 
 to verify your identity
             </div>
+            </div>
+            <div className="text-cover-2">
             <div className='popup-subheading-second'>
             This will help us secure your account.
+            </div>
             </div>
             <div className='popup-list-second'>
                 <div className='popup-list-second-text'>
