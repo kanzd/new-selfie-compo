@@ -1,8 +1,8 @@
 .list-tile{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    width: 120vw;
+    justify-content: space-between;
+    width: 90vw;
     margin-top: 5%;
     max-width: 675px;
 }
