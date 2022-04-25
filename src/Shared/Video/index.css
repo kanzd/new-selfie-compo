@@ -15,6 +15,7 @@
    
 }
 
+
 .video-camera .frame{
     position: absolute;
     top:21px;
@@ -105,3 +106,20 @@ border-bottom-right-radius: 3px;
 .button:hover{
     cursor: pointer;
 }
+
+@media screen and (max-width:500px) {
+    .inside{
+     width: 330px;
+     height: 405px;
+     background-color: black;
+     border-radius: 12px;
+     overflow: hidden; 
+    
+ }
+ .video-camera .frame{
+    position: absolute;
+    top:21px;
+    left: 4px;
+}
+ 
+ }

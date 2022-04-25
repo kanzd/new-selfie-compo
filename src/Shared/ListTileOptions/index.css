@@ -45,3 +45,18 @@
     text-align: center;
     font-weight: 400;
 }
+
+@media screen and (max-width:500px) {
+    .icons-do img{
+        height: 30px;
+    }
+    .first-tile{
+        text-align: left;
+        padding: 10px 55px;
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .icon-wrapper{
+        padding: 0px 3px;
+    }
+}

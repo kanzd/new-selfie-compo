@@ -13,36 +13,34 @@ export default function Index() {
            Do's
          </div>
          <div className="icons-do">
-           <div>
-             <img src={icons.first} height={60}></img>
+           <div className='icon-wrapper'>
+             <img className="icon-file" src={icons.first} height={60}></img>
              <div className='icon-text'>Clear Face</div>
            </div>
-           <div>
-           <img src={icons.second} height={60}></img>
+           <div className='icon-wrapper'>
+           <img className="icon-file" src={icons.second} height={60}></img>
            <div className='icon-text'>Good lighting</div>
            </div>
          </div>
        </div>
-       <div className="cover-list-tile-donts">
+       <div  className="cover-list-tile-donts">
          <div className="list-option-title">
            Dont's
          </div>
          <div className="icons-do">
-           <div>
-             <img src={icons.thrid} height={60}></img>
+           <div className='icon-wrapper'>
+             <img className="icon-file" src={icons.thrid} height={60}></img>
              <div className='icon-text'>No masks</div>
            </div>
-           <div>
-           <img src={icons.fourth} height={60}></img>
+           <div className='icon-wrapper'>
+           <img className="icon-file" src={icons.fourth} height={60}></img>
            <div className='icon-text'>No glasses</div>
-           </div>
-           <div>
-           <img src={icons.fiveth} height={60}></img>
+           </div >
+           <div className='icon-wrapper'>
+           <img className="icon-file" src={icons.fiveth} height={60}></img>
            <div className='icon-text'>No headgear</div>
            </div>
-           <div>
-           
-           </div>
+          
          </div>
        </div>
        </div>
