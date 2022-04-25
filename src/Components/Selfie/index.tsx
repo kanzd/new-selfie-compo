@@ -35,7 +35,8 @@ export default function Index() {
         setCurrentScreen(2);
         
     }}></Video>
-    {/* <ListTileOption /> */}
+
+    <ListTileOption />
     </Container>:<Container color={"#1A1A1A"}>
         <div className='second-root'>
             <div className="noti-text">

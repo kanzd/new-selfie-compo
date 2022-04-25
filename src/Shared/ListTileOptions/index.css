@@ -6,4 +6,42 @@
 }
 .first-tile{
     text-align: left;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.list-option-title{
+    font-size: 10px;
+
+}
+.cover-list-tile{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.icons-do{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.cover-list-tile-do{
+    border-style: solid;
+    border-radius: 8px;
+    border-color: #F0F0F0;
+    border-width: 0.5px;
+    padding: 10px;
+    margin-right:10px;
+}
+.cover-list-tile-donts{
+    border-style: solid;
+    border-radius: 8px;
+    border-color: #F0F0F0;
+    border-width: 0.5px;
+    padding: 10px;
+}
+.icon-text{
+    font-size: 10px;
+    text-align: center;
+    font-weight: 400;
 }
