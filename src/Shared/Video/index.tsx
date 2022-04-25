@@ -2,8 +2,9 @@ import React, { useEffect,useState } from 'react'
 import "./index.css";
 export default function Index(props: any) {
     const [img,setImg]=useState('');
+    const [permit,setPermit] = useState(false);
     const successHandler = (stream: any) => {
-
+        setPermit(true);
         // window.streamTracks = stream;
         const video = document.querySelector('video');
         if (video) {
@@ -60,7 +61,8 @@ export default function Index(props: any) {
 
             </div>
         </div>
-        <div className='button' onClick={(e)=>{
+        <div className='button' onClick={(e:any)=>{
+            if(permit){
             const video:HTMLVideoElement | any = document.querySelector("#user-video");
             const canvas:HTMLCanvasElement | any = document.createElement("canvas");
             canvas.height=video.videoHeight;
@@ -71,6 +73,10 @@ export default function Index(props: any) {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             
             props.onClick(dataUri,video);
+            }
+            else{
+                props.noPermission();
+            }
         }}>
             <div className='inner-button'>
 
