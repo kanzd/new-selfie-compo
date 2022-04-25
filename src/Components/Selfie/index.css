@@ -81,7 +81,7 @@ body{
     color: #FFFFFF;
     padding: 16px;
     border-radius: 100px;
-    width: 36vw;
+    width: 450px;
     text-align: center;
     margin: 28px 0px;
     font-size: 16px;
@@ -98,14 +98,15 @@ body{
 .popup-heading-second{
     font-weight: 600;
 width: 290px;
-margin-left: -170px;
+margin-right: 170px;
+
 }
 .popup-subheading-second{
     text-align: center;
     color: #4A4A4A;
     width: 320px;
-    margin-top: 6px;
-    margin-left: -230px;
+    margin-top: 10px;
+    margin-right: 230px;
     font-size: 14px;
 }
 .popup-list-second{
@@ -119,4 +120,19 @@ margin-left: -170px;
 }
 .popup-list-second-image{
     margin-bottom:2%;
+}
+@media screen and (max-width:600px){
+    .popup-button{
+   
+        background-color: #1FBA68;
+        color: #FFFFFF;
+        padding: 16px;
+        border-radius: 100px;
+        width: 85vw;
+        text-align: center;
+        margin: 28px 0px;
+        font-size: 16px;
+        font-weight: 600;
+    
+    }
 }

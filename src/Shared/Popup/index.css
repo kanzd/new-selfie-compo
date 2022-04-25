@@ -10,11 +10,13 @@
 }
 .popup{
     position: fixed;
-    top: 10%;
-    left: 30%;
+    bottom:50%;
+    left: 50%;
+    transition: all .8s ease-in-out;
+    transform: translate(-50%, 50%);
     background-color: #FFFFFF;
     vertical-align: middle;
-    width: 41vw;
+    width: 512px;
     opacity: 100%;
     z-index: 2;
     border-radius: 8px;
@@ -27,4 +29,21 @@
 }
 .close-popup:hover{
     cursor: pointer;
+}
+@media screen and (max-width:600px) {
+    .popup{
+        position: fixed;
+       
+        bottom:0;
+        left: 50%;
+        transition: all .8s ease-in-out;
+        transform: translate(-50%, 0);
+        
+        background-color: #FFFFFF;
+        vertical-align: middle;
+        width: 99vw;
+        opacity: 100%;
+        z-index: 2;
+        border-radius: 8px;
+    }
 }
