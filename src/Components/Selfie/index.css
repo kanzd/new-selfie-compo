@@ -26,7 +26,8 @@ body{
 .confirm-selfie{
     background-color: #1FBA68;
     color: white;
-    width: 464px;
+    width: 90vw;
+    max-width: 464px;
     height: 56px;
     display: flex;
     flex-direction: column;
@@ -39,7 +40,8 @@ body{
 .retake-selfie{
     background-color: #FFFFFF;
     color: #1FBA68;
-    width: 464px;
+    width: 90vw;
+    max-width: 464px;
     height: 56px;
     font-weight: 600;
     display: flex;
