@@ -74,9 +74,7 @@ export default function Index(props: any) {
             
             props.onClick(dataUri,video);
             }
-            else{
-                props.noPermission();
-            }
+           
         }}>
             <div className='inner-button'>
 
