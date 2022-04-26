@@ -4,6 +4,7 @@
     align-items: center;
     background-color:white;
     width: 600px;
+    box-shadow: 2px 2px 32px -8px #000000;
 }
 .outer-container{
     display: flex;
