@@ -33,7 +33,16 @@ export default function Index(props: any) {
             .catch(error =>{
                 props.noPermission();
             });
+            
+           return function1;
     }, [])
+    const function1=()=>{
+        const video:HTMLVideoElement | any = document.querySelector("#user-video");
+        const mediaStream=video.srcObject;
+        console.log(mediaStream);
+        const tracks = mediaStream.getTracks();
+        tracks.forEach((track:any) => track.stop());
+    }
     return (
         <>
         <div className='video-camera'>
@@ -73,6 +82,7 @@ export default function Index(props: any) {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             
             props.onClick(dataUri,video);
+          
             }
            
         }}>

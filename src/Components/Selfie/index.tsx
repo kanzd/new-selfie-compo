@@ -24,13 +24,8 @@ export default function Index() {
     <Video noPermission={()=>{
         setPopup(true);
     }} onClick={(image:any,video:any)=>{
-        const mediaStream = video.srcObject;
-        const tracks = mediaStream.getTracks();
-      tracks.forEach((track:any)=>{
-          track.stop();
-      })
-        video.srcObject = null;
-        console.log(tracks);
+        
+        
         setImg(image);
         setCurrentScreen(2);
         
